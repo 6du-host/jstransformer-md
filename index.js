@@ -14,7 +14,7 @@ exports.render = function (str, options) {
   const renderRules = Object.assign({}, options.renderRules || {})
   delete options.renderRules
 
-  const md = markdownIt(options).use(require('markdown-it-footnote'))
+  const md = markdownIt(options).use(require('markdown-it-footnote-6du'))
 
   // Enable render rules.
   Object.assign(md.renderer.rules, renderRules);
