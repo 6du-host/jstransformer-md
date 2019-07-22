@@ -1,8 +1,8 @@
 'use strict'
 
-const markdownIt = require('markdown-it')
+const markdownIt = require('markdown-it').use(require('markdown-it-footnote'))
 
-exports.name = 'markdown-it'
+exports.name = 'md'
 exports.outputFormat = 'html'
 exports.inputFormats = ['markdown-it', 'markdown', 'md']
 

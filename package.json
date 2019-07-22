@@ -1,5 +1,5 @@
 {
-  "name": "jstransformer-markdown-it",
+  "name": "jstransformer-md",
   "version": "2.1.0",
   "description": "markdown-it support for JSTransformers.",
   "keywords": [
@@ -10,12 +10,13 @@
     "index.js"
   ],
   "dependencies": {
-    "markdown-it": "^8.0.0"
+    "markdown-it": "^9.0.1",
+    "markdown-it-footnote": "^3.0.2"
   },
   "devDependencies": {
     "markdown-it-container": "^2.0.0",
     "markdown-it-mark": "^2.0.0",
-    "test-jstransformer": "^1.0.0",
+    "test-jstransformer": "^1.0.3",
     "xo": "*"
   },
   "scripts": {
@@ -28,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jstransformers/jstransformer-markdown-it.git"
+    "url": "https://github.com/6du-host/jstransformer-md.git"
   },
   "author": {
     "name": "JSTransformers Team",
