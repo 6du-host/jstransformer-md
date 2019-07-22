@@ -1,6 +1,6 @@
 'use strict'
 
-const markdownIt = require('markdown-it').use(require('markdown-it-footnote'))
+const markdownIt = require('markdown-it')
 
 exports.name = 'md'
 exports.outputFormat = 'html'
@@ -14,7 +14,7 @@ exports.render = function (str, options) {
   const renderRules = Object.assign({}, options.renderRules || {})
   delete options.renderRules
 
-  const md = markdownIt(options)
+  const md = markdownIt(options).use(require('markdown-it-footnote'))
 
   // Enable render rules.
   Object.assign(md.renderer.rules, renderRules);
